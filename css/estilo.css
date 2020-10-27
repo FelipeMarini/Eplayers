@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@400;700&display=swap');
+
+:root {
+        --background: #000000;
+        --red: #C20000;
+        --blue: #001F70;
+        --gradient: linear-gradient(180deg, #000000 0%, rgba(83, 83, 83, 0.577381) 25%, rgba(196, 196, 196, 0) 87.5%);
+        --font: 'Titillium Web', 'sans-serif';}
+
+body { background-color:cvar(--red);
+       font-family: var(--font);}
+
+* { margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+   }
+
+   
