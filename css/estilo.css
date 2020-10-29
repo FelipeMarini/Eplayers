@@ -35,10 +35,9 @@ img { width: 100%;}
 .flex-center { display: flex;
                justify-content: space-between;
                align-items: center;
-             }
-
-.header-top img { max-width: 21.18em;
 }
+
+.header-top img { max-width: 21.18em;}
 
 .menu  { width: 100%;
          max-width: 50em;
@@ -61,8 +60,66 @@ img { width: 100%;}
 
 #menu-bars { display:none;}
 
+.banner { position: relative;} /*legal revisar o conceito de position para o banner!*/
 
+.banner-container { width:100%;
+                    height:100%;
+                    /* background-color: rgba(218, 188, 218, 0.192); */
+                    position: absolute; /*legal revisar o conceito de position para o banner!*/
+                    top: 0;
+}
 
+.banner-content { width:80%;
+                  height:100%;
+                  margin:auto;
+                  /* background-color: rgba(153, 205, 50, 0.267); */
+                  display: flex;
+                  justify-content: flex-end;
+}
+
+.banner-text { width:50%;
+               height:100%;
+               /* background-color: coral; */
+               display: flex;
+               flex-direction: column;
+               align-items: center;
+               justify-content: center;
+               color: #fff;
+}
+
+.banner-text h1 { font-size: 5em;
+}
+
+.banner-text p { font-size: 1.87em;
+}
+
+.banner-text a { color: #fff;
+                 font-size: 1.87em;
+                 text-decoration: none;
+                 text-transform: uppercase;
+                 background-color: var(--red);
+                 padding: 0.5em 1.2em;
+                 border-radius: 0.75em;
+                 margin-top: 2em;
+}
+
+.games { width: 100%;
+        height: 7.5em;
+        /* background-color: yellow; */
+}
+
+.games ul { /*background-color: red;*/
+            list-style-type: none;
+            width: 100%;
+}
+
+.games img { width:10.62em;
+
+}
+
+.games ul a:hover img { transition: 0.5s;
+                        transform: scale(1.5);
+}
 
 
 @media screen and (max-width:74,93em) { 
