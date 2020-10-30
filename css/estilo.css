@@ -65,7 +65,7 @@ img { width: 100%;}
 .banner-container { width:100%;
                     height:100%;
                     /* background-color: rgba(218, 188, 218, 0.192); */
-                    position: absolute; /*legal revisar o conceito de position para o banner!*/
+                    position: absolute;                                   /*legal revisar o conceito de position para o banner!*/
                     top: 0;
 }
 
@@ -103,6 +103,10 @@ img { width: 100%;}
                  margin-top: 2em;
 }
 
+.banner-text a:hover { text-decoration: underline;
+                       color: purple; 
+}
+
 .games { width: 100%;
         height: 7.5em;
         /* background-color: yellow; */
@@ -121,9 +125,9 @@ img { width: 100%;}
                         transform: scale(1.5);
 }
 
-.about {height:31.25em;
-        background-color: var(--blue);
-        position: relative;
+.about { height:31.25em;
+         background-color: var(--blue);
+         position: relative;
 }
 
 .about-angulation { display:flex;
@@ -161,9 +165,52 @@ img { width: 100%;}
 .text-about p { font-size:1.25em;
 }
 
-.content-about img { max-width: 31.875em;
-
+.content-about img { max-width: 31.875em;     
 }
+
+.games-aovivo, .games-embreve {
+                display:flex;
+                color:#fff;
+                font-size: 1.875em;
+                justify-content: space-between;
+                margin-left: 2em;
+                align-items: center;
+}
+
+.games-aovivo h2 { margin-right:0.8em;
+}
+
+.partida { display: flex;
+           align-items: center;
+           width: 9.5em;
+           justify-content: space-between;
+}
+
+.time1, .time2 { display: flex;
+                 align-items: center;
+}
+
+.partida img { width: 1.8em;
+}
+
+.time1 img { margin-left: 0.5em;
+}
+
+.time2 img { margin-right: 0.5em;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 @media screen and (max-width:74,93em) { 
