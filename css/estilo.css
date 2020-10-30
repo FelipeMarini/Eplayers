@@ -121,6 +121,50 @@ img { width: 100%;}
                         transform: scale(1.5);
 }
 
+.about {height:31.25em;
+        background-color: var(--blue);
+        position: relative;
+}
+
+.about-angulation { display:flex;
+                    align-items: center;
+                    width:100%;
+                    height:100%;
+}
+
+.angulation { height:24.125em;
+              background-color:var(--background);
+              width:100%;
+              transform:skewY(-4deg)
+}
+
+.container-about { color:white;
+                   position: absolute;
+                   top:0;
+}
+
+.content-about { width:80%;
+                 margin:auto;
+                 display:flex;
+                 align-items:center;
+                 justify-content: space-between;
+}
+
+.text-about { width:50%;
+              text-align:justify;
+}
+
+.text-about h2 { margin-bottom:1em;
+                 font-size:2.1875em;
+}
+
+.text-about p { font-size:1.25em;
+}
+
+.content-about img { max-width: 31.875em;
+
+}
+
 
 @media screen and (max-width:74,93em) { 
 
