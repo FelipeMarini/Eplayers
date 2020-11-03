@@ -5,226 +5,257 @@
         --red: #C20000;
         --blue: #001F70;
         --gradient: linear-gradient(270deg, #000000 50%, rgba(0, 0, 0, 0) 100%);
-        --font: 'Titillium Web', 'sans-serif';}
-
-* { margin: 0;
-    padding: 0;
-    border: 0;
-    box-sizing: border-box;
-   }
-
-body { background-color: var(--background);
-       font-family: var(--font);
-       font-size: 16px;
-       }
-
-img { width: 100%;}
-
-.header-top { width: 100%;
-              height: 5em;
-              /* background-color: aliceblue; */
+        --font: 'Titillium Web', 'sans-serif';
 }
 
-.content { width: 100%;
-           max-width: 75em;
-           height: 100%;
-           /* background-color: aqua; */
-           margin: auto;
+* {
+        margin: 0;
+        padding: 0;
+        border: 0;
+        box-sizing: border-box;
 }
 
-.flex-center { display: flex;
-               justify-content: space-between;
-               align-items: center;
+body {
+        background-color: var(--background);
+        font-family: var(--font);
+        font-size: 16px;
 }
 
-.header-top img { max-width: 21.18em;}
-
-.menu  { width: 100%;
-         max-width: 50em;
+img {
+        width: 100%;
 }
 
-.menu ul { list-style-type: none;}
-
-.menu a { color: white;
-          text-decoration: none;
-          text-transform: uppercase;
-          font-size: 1.5em;
-          /* background-color: red; */
-          padding: 0.9em 0.66em;
+.header-top {
+        width: 100%;
+        height: 5em;
+        /* background-color: aliceblue; */
 }
 
-.menu a:hover { text-shadow: 0 0 20px #fff;
-                text-decoration: underline;
-                background-color: var(--red);
+.content {
+        width: 100%;
+        max-width: 75em;
+        height: 100%;
+        /*background-color: aqua;*/
+        margin: auto;
 }
 
-#menu-bars { display:none;}
-
-.banner { position: relative;} /*legal revisar o conceito de position para o banner!*/
-
-.banner-container { width:100%;
-                    height:100%;
-                    /* background-color: rgba(218, 188, 218, 0.192); */
-                    position: absolute;                                   /*legal revisar o conceito de position para o banner!*/
-                    top: 0;
+.flex-center {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
 }
 
-.banner-content { width:80%;
-                  height:100%;
-                  margin:auto;
-                  /* background-color: rgba(153, 205, 50, 0.267); */
-                  display: flex;
-                  justify-content: flex-end;
+.header-top img {
+        max-width: 21.18em;
 }
 
-.banner-text { width:50%;
-               height:100%;
-               /* background-color: coral; */
-               display: flex;
-               flex-direction: column;
-               align-items: center;
-               justify-content: center;
-               color: #fff;
+.menu {
+        width: 100%;
+        max-width: 50em;
 }
 
-.banner-text h1 { font-size: 5em;
+.menu ul {
+        list-style-type: none;
 }
 
-.banner-text p { font-size: 1.87em;
+.menu a {
+        color: white;
+        text-decoration: none;
+        text-transform: uppercase;
+        font-size: 1.5em;
+        /* background-color: red; */
+        padding: 0.9em 0.66em;
 }
 
-.banner-text a { color: #fff;
-                 font-size: 1.87em;
-                 text-decoration: none;
-                 text-transform: uppercase;
-                 background-color: var(--red);
-                 padding: 0.5em 1.2em;
-                 border-radius: 0.75em;
-                 margin-top: 2em;
+.menu a:hover {
+        text-shadow: 0 0 20px #fff;
+        text-decoration: underline;
+        background-color: var(--red);
 }
 
-.banner-text a:hover { text-decoration: underline;
-                       color: purple; 
+#menu-bars {
+        display: none;
 }
 
-.games { width: 100%;
+.banner {
+        position: relative;
+}
+
+/*legal revisar o conceito de position para o banner!*/
+
+.banner-container {
+        width: 100%;
+        height: 100%;
+        /* background-color: rgba(218, 188, 218, 0.192); */
+        position: absolute;
+        /*legal revisar o conceito de position para o banner!*/
+        top: 0;
+}
+
+.banner-content {
+        width: 80%;
+        height: 100%;
+        margin: auto;
+        /* background-color: rgba(153, 205, 50, 0.267); */
+        display: flex;
+        justify-content: flex-end;
+}
+
+.banner-text {
+        width: 50%;
+        height: 100%;
+        /* background-color: coral; */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        color: #fff;
+}
+
+.banner-text h1 {
+        font-size: 5em;
+}
+
+.banner-text p {
+        font-size: 1.87em;
+}
+
+.banner-text a {
+        color: #fff;
+        font-size: 1.87em;
+        text-decoration: none;
+        text-transform: uppercase;
+        background-color: var(--red);
+        padding: 0.5em 1.2em;
+        border-radius: 0.75em;
+        margin-top: 2em;
+}
+
+.games {
+        width: 100%;
         height: 7.5em;
-        /* background-color: yellow; */
+        /*background-color: yellow;*/
 }
 
-.games ul { /*background-color: red;*/
-            list-style-type: none;
-            width: 100%;
+.games ul {
+        /*background-color: red;*/
+        list-style-type: none;
+        width: 100%;
 }
 
-.games img { width:10.62em;
-
+.games img {
+        width: 10.62em;
 }
 
-.games ul a:hover img { transition: 0.5s;
-                        transform: scale(1.5);
+.games ul a:hover img {
+        transition: 0.5s;
+        transform: scale(1.5);
 }
 
-.about { height:31.25em;
-         background-color: var(--blue);
-         position: relative;
+.about {
+        height: 31.25em;
+        background-color: var(--blue);
+        position: relative;
 }
 
-.about-angulation { display:flex;
-                    align-items: center;
-                    width:100%;
-                    height:100%;
+.about-angulation {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        height: 100%;
 }
 
-.angulation { height:24.125em;
-              background-color:var(--background);
-              width:100%;
-              transform:skewY(-4deg)
+.angulation {
+        height: 24.125em;
+        background-color: var(--background);
+        width: 100%;
+        transform: skewY(-4deg)
 }
 
-.container-about { color:white;
-                   position: absolute;
-                   top:0;
+.container-about {
+        color: white;
+        position: absolute;
+        top: 0;
 }
 
-.content-about { width:80%;
-                 margin:auto;
-                 display:flex;
-                 align-items:center;
-                 justify-content: space-between;
+.content-about {
+        width: 80%;
+        margin: auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
 }
 
-.text-about { width:50%;
-              text-align:justify;
+.text-about {
+        width: 50%;
+        text-align: justify;
 }
 
-.text-about h2 { margin-bottom:1em;
-                 font-size:2.1875em;
+.text-about h2 {
+        margin-bottom: 1em;
+        font-size: 2.1875em;
 }
 
-.text-about p { font-size:1.25em;
+.text-about p {
+        font-size: 1.25em;
 }
 
-.content-about img { max-width: 31.875em;     
+.content-about img {
+        max-width: 31.875em;
+}
+
+.games-aovivo::after {
+        content: '';
+        border: solid 1px #fff;
+        height: 90px;
+        margin-left: 1em;
 }
 
 .games-aovivo, .games-embreve {
-                display:flex;
-                color:#fff;
-                font-size: 1.875em;
-                justify-content: space-between;
-                margin-left: 2em;
-                align-items: center;
+        /*background-color:brown;*/
+        display: flex;
+        color: #fff;
+        align-items: center;
+        font-size: 1.875em;
+        /* FONTE PAI!=1.875x16(padrão)=30px */
 }
 
-.games-aovivo h2 { margin-right:0.8em;
+.games-aovivo h2 {
+        /*margin-right: 1em;*/
 }
 
-.partida { display: flex;
-           align-items: center;
-           width: 9.5em;
-           justify-content: space-between;
+.partida {
+        /*background-color: purple;*/
+        display: flex;
+        align-items: center;
+        width: 9.5em;
+        /* 285/30px(fonte pai)=9.5em */
+        justify-content: space-between;
+        margin-left: 1em;
 }
 
-.time1, .time2 { display: flex;
-                 align-items: center;
+.partida img {
+        width: 1.8em;
 }
 
-.partida img { width: 1.8em;
+.time1, .time2 {
+        display: flex;
+        /*background-color: royalblue;*/
+        align-items: center;
 }
 
-.time1 img { margin-left: 0.5em;
+.time1 img {
+        margin-left: 0.5em;
 }
 
-.time2 img { margin-right: 0.5em;
+.time2 img {
+        margin-right: 0.5em;
 }
 
+@media screen and (max-width:74, 93em) {}
 
+@media screen and (max-width:61, 93em) {}
 
+@media screen and (max-width:47, 93px) {}
 
-
-
-
-
-
-
-
-
-
-
-
-@media screen and (max-width:74,93em) { 
-
-}
-
-@media screen and (max-width:61,93em) {
-
-}
-
-@media screen and (max-width:47,93px) {
-
-}
-
-@media screen and (max-width:36em) {
-
-}
+@media screen and (max-width:36em) {}
