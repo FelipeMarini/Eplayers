@@ -2,9 +2,10 @@
 
 :root {
         --background: #000000;
+        --bgnews: #1e1c21;
         --red: #C20000;
         --blue: #001F70;
-        --gradient: linear-gradient(270deg, #000000 50%, rgba(0, 0, 0, 0) 100%);
+        --gradient: linear-gradient(180deg, rgba(83, 83, 83, 0.5) 0%, #000000 100%);
         --font: 'Titillium Web', 'sans-serif';
 }
 
@@ -31,8 +32,8 @@ img {
         /* background-color: aliceblue; */
 }
 
-.content {
-        width: 100%;
+.content {                 /* usado para várias seções do site */
+        width: 95%;
         max-width: 75em;
         height: 100%;
         /*background-color: aqua;*/
@@ -45,17 +46,24 @@ img {
         align-items: center;
 }
 
+.flex-center {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+}
+
 .header-top img {
         max-width: 21.18em;
 }
 
 .menu {
-        width: 100%;
+        width: 95%;
         max-width: 50em;
 }
 
 .menu ul {
         list-style-type: none;
+        margin-left: 1em;
 }
 
 .menu a {
@@ -64,7 +72,7 @@ img {
         text-transform: uppercase;
         font-size: 1.5em;
         /* background-color: red; */
-        padding: 0.9em 0.66em;
+        padding: 0.9em 0.5em;
 }
 
 .menu a:hover {
@@ -93,23 +101,25 @@ img {
 }
 
 .banner-content {
-        width: 80%;
+        width: 95%;
         height: 100%;
         margin: auto;
         /* background-color: rgba(153, 205, 50, 0.267); */
         display: flex;
         justify-content: flex-end;
+        margin-right: 5em;
 }
 
 .banner-text {
         width: 50%;
         height: 100%;
-        /* background-color: coral; */
+        /* background-color: coral;*/ 
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
         color: #fff;
+        padding-left: 3em;
 }
 
 .banner-text h1 {
@@ -129,6 +139,11 @@ img {
         padding: 0.5em 1.2em;
         border-radius: 0.75em;
         margin-top: 2em;
+}
+
+.banner-text a:hover {
+        text-decoration: underline;
+        color: lightgreen;
 }
 
 .games {
@@ -179,7 +194,7 @@ img {
 }
 
 .content-about {
-        width: 80%;
+        width: 95%;
         margin: auto;
         display: flex;
         align-items: center;
@@ -204,20 +219,17 @@ img {
         max-width: 31.875em;
 }
 
-.games-aovivo::after {
-        content: '';
-        border: solid 1px #fff;
-        height: 90px;
-        margin-left: 1em;
-}
-
 .games-aovivo, .games-embreve {
         /*background-color:brown;*/
         display: flex;
         color: #fff;
         align-items: center;
-        font-size: 1.875em;
-        /* FONTE PAI!=1.875x16(padrão)=30px */
+        font-size: 1.5625em;
+}
+
+.linha {
+        border: solid 1px #fff;
+        height: 5em;
 }
 
 .games-aovivo h2 {
@@ -251,6 +263,95 @@ img {
 .time2 img {
         margin-right: 0.5em;
 }
+
+.ajuste-partida2-breve { /*background-color: lightpink;*/
+                         margin-left: 2em;
+}
+
+/* Início da parte das Notícias */
+
+.bg-news { width: 100%;
+           height: auto;
+           background-color: var(--bgnews);
+}
+
+.news { width: 70%;
+        height: 90%;
+         /*background-color: lightgray; */
+}
+
+.news h2, .next-games h2 { color: #fff;
+           margin: 1em 0;
+           font-size: 2.1875em;
+}
+
+.next-games { width: 25%;
+              height: 90%;
+              /* background-color:lightgray; */
+}
+
+.content-news { display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+                align-items: center;
+}
+
+.card-news { width: 15em;
+             height: 22.5em;
+             background:var(--gradient);
+             box-shadow: 0 0 10px rgb(92,92,92);
+             margin-bottom: 2em;   /* espaçamento entre os cards*/
+}
+
+.card-news h3 { padding: 0.5em 0.6em;
+}
+
+.card-news p { padding: 0 0.6em;
+}
+
+.card-news a { color: #fff;
+               text-decoration: none;
+}
+
+.next-games-bg { width: 90%;   /* pai das próximas partidas*/    /*90% dos 25% de width definido em .next-games*/
+                 height: auto;
+                 background:var(--gradient);
+                 display: flex;
+                 flex-direction: column;
+                 justify-content: space-around;
+                 padding: 1em 0;
+}
+
+.next-games-match { display: flex;
+                    flex-direction: column;
+                    color: #fff;
+                    justify-content: space-around;    /* estudar diferença entre space-between e space-around */
+                    align-items: center;
+                    /* background-color: lightsalmon; */
+                    width:100%;
+                    height: 6.25em;
+                    font-weight: 700;
+}
+
+.teams { width: 100%;                  /* div feita para espaçar os logos dos times do vs */
+         display: flex;
+         justify-content: space-around;
+         padding-top: 0.8em;
+}
+
+.next-games-match img { max-width: 2.5em;
+}
+
+.next-games-match div { display: flex;
+                        align-items: center;
+}
+
+
+
+
+
+
+
 
 @media screen and (max-width:74, 93em) {}
 
