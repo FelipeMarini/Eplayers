@@ -89,16 +89,13 @@ img {
         position: relative;
 }
 
-/*legal revisar o conceito de position para o banner!*/
-
-.banner-container {
+.banner-container {         /*legal revisar o conceito de position para o banner!*/
         width: 100%;
         height: 100%;
         /* background-color: rgba(218, 188, 218, 0.192); */
         position: absolute;
-        /*legal revisar o conceito de position para o banner!*/
         top: 0;
-}
+}                                                 
 
 .banner-content {
         width: 95%;
@@ -113,7 +110,7 @@ img {
 .banner-text {
         width: 50%;
         height: 100%;
-        /* background-color: coral;*/ 
+        /* background-color: coral;*/
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -264,91 +261,164 @@ img {
         margin-right: 0.5em;
 }
 
-.ajuste-partida2-breve { /*background-color: lightpink;*/
-                         margin-left: 2em;
+.ajuste-partida2-breve {
+        /*background-color: lightpink;*/
+        margin-left: 2em;
 }
 
 /* Início da parte das Notícias */
 
-.bg-news { width: 100%;
-           height: auto;
-           background-color: var(--bgnews);
+.bg-news {
+        width: 100%;
+        height: auto;
+        background-color: var(--bgnews);
 }
 
-.news { width: 70%;
+.news {
+        width: 70%;
         height: 90%;
-         /*background-color: lightgray; */
+        /*background-color: lightgray; */
 }
 
-.news h2, .next-games h2 { color: #fff;
-           margin: 1em 0;
-           font-size: 2.1875em;
+.news h2, .next-games h2 {
+        color: #fff;
+        margin: 1em 0;
+        font-size: 2.1875em;
 }
 
-.next-games { width: 25%;
-              height: 90%;
-              /* background-color:lightgray; */
+.next-games {
+        width: 25%;
+        height: 90%;
+        /* background-color:lightgray; */
+        margin-left: 4em;
 }
 
-.content-news { display: flex;
-                flex-wrap: wrap;
-                justify-content: space-between;
-                align-items: center;
+.content-news {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
 }
 
-.card-news { width: 15em;
-             height: 22.5em;
-             background:var(--gradient);
-             box-shadow: 0 0 10px rgb(92,92,92);
-             margin-bottom: 2em;   /* espaçamento entre os cards*/
+.card-news {
+        width: 15em;
+        height: 22.5em;
+        background: var(--gradient);
+        box-shadow: 0 0 10px rgb(92, 92, 92);
+        margin-bottom: 2em;
+        /* espaçamento entre os cards*/
 }
 
-.card-news h3 { padding: 0.5em 0.6em;
+.card-news h3 {
+        padding: 0.5em 0.6em;
 }
 
-.card-news p { padding: 0 0.6em;
+.card-news p {
+        padding: 0 0.6em;
 }
 
-.card-news a { color: #fff;
-               text-decoration: none;
+.card-news a {
+        color: #fff;
+        text-decoration: none;
 }
 
-.next-games-bg { width: 90%;   /* pai das próximas partidas*/    /*90% dos 25% de width definido em .next-games*/
-                 height: auto;
-                 background:var(--gradient);
-                 display: flex;
-                 flex-direction: column;
-                 justify-content: space-around;
-                 padding: 1em 0;
+.next-games-bg {
+        width: 90%;
+        /* pai das próximas partidas*/
+        /*90% dos 25% de width definido em .next-games*/
+        height: auto;
+        background: var(--gradient);
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        padding: 1em 0;
 }
 
-.next-games-match { display: flex;
-                    flex-direction: column;
-                    color: #fff;
-                    justify-content: space-around;    /* estudar diferença entre space-between e space-around */
-                    align-items: center;
-                    /* background-color: lightsalmon; */
-                    width:100%;
-                    height: 6.25em;
-                    font-weight: 700;
+.next-games-match {
+        display: flex;
+        flex-direction: column;
+        color: #fff;
+        justify-content: space-around;
+        /* estudar diferença entre space-between e space-around */
+        align-items: center;
+        /* background-color: lightsalmon; */
+        width: 100%;
+        height: 6.25em;
+        font-weight: 700;
 }
 
-.teams { width: 100%;                  /* div feita para espaçar os logos dos times do vs */
-         display: flex;
-         justify-content: space-around;
-         padding-top: 0.8em;
+.teams {
+        width: 100%;
+        /* div feita para espaçar os logos dos times do vs */
+        display: flex;
+        justify-content: space-around;
+        padding-top: 0.8em;
 }
 
-.next-games-match img { max-width: 2.5em;
+.next-games-match img {
+        max-width: 2.5em;
 }
 
-.next-games-match div { display: flex;
-                        align-items: center;
+.next-games-match div {
+        display: flex;
+        align-items: center;
 }
 
+.links-footer { display: flex;
+                width: 33%;
+                justify-content: space-around;
+}
+
+.links {color: #fff;}
+
+.links a {text-decoration: none;
+          color:#fff;
+}
+
+.rodape { padding: 1em 0;
+
+}
+
+.logo-rodape { width: 19.06em;
+}
+
+.sociais h2 { color:#fff;}
 
 
+.sociais > h2 { font-size: 0.875em;
+                margin-bottom: 0.5em;
+}
 
+.sociais input[type="email"] { height: 2.3125em;
+                               width: 12.1875em;
+}
+
+.sociais input[type="email"]::placeholder { color:#b8b3b3;
+                                            font-weight: bold;
+                                            padding-left: 0.4em;
+}
+
+.sociais input[type="submit"] { /*height: 1.715em;*/
+                                width: 9.75em;
+                                color: #fff;
+                                background-color: #8326ef;
+                                font-size: 1.1em;
+                                font-weight: 700;
+                                cursor: pointer;
+}
+
+.sociais form { display: flex;
+                margin-bottom: 0.5em;
+}
+
+.siga-nos { display: flex;
+            align-items: center;
+            margin-top: 0.8em;
+            justify-content: space-between;
+}
+
+.logo-face { padding-right: 0.5em;
+}
 
 
 
