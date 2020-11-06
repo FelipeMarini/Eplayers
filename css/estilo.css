@@ -46,11 +46,7 @@ img {
         align-items: center;
 }
 
-.flex-center {
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-}
+
 
 .header-top img {
         max-width: 21.18em;
@@ -59,13 +55,21 @@ img {
 .menu {
         width: 95%;
         max-width: 50em;
-        background-color: rgba(255, 160, 122, 0.205);
+        /* background-color: rgba(255, 160, 122, 0.205); */
         display: flex;
+        flex-direction: row;
+        justify-content: space-between;
 }
+
+.menu-responsivo {display:none;}
+
+.icone-mobile { display: none;}
 
 .menu ul {
         list-style-type: none;
-        margin-left: 1em;
+        margin-left: 2em;
+        display: flex;
+        flex-wrap: wrap;
 }
 
 .menu a {
@@ -83,9 +87,6 @@ img {
         background-color: var(--red);
 }
 
-#menu-bars {
-        display: none;
-}
 
 .banner {
         position: relative;
@@ -118,7 +119,7 @@ img {
         align-items: center;
         justify-content: center;
         color: #fff;
-        padding-left: 3em;
+        padding-left: 4.5em;
 }
 
 .banner-text h1 {
@@ -231,9 +232,6 @@ img {
         height: 5em;
 }
 
-.games-aovivo h2 {
-        /*margin-right: 1em;*/
-}
 
 .partida {
         /*background-color: purple;*/
@@ -434,11 +432,18 @@ img {
         
         body {font-size:12px;}
         
-        .header-top img {margin-top: 1em;}
+        .header-top img {margin-top: 0.5em;}
 
         .menu-responsivo { display: none;}
         
         .icone-mobile { display: none;}
+
+        .pages-rodape2 { display:none;}
+
+        .pages-rodape1 { line-height: 2em;}
+
+        .logo-rodape { margin-right:7em;
+                       width: 21em; }
 
 }
 
@@ -449,13 +454,17 @@ img {
 
         .news { max-width: 40em;}
 
-        .icone-mobile { display:block;}
+        .icone-mobile { display:block;
+                        margin-right: 8em;
+        }
 
         .fas { color:#fff;
                font-size: 45px;
                display: flex; }
                
-        .header-top img { margin-bottom: 1em;}
+        .header-top img { align-items:center;
+                          margin-left: 2em;
+        }
         
         .menu { display: none;}
 
@@ -483,6 +492,12 @@ img {
         .logo-rodape { margin-right: 4em;
                        width: 22em;
         }
+
+        .next-games-bg { height:70em;}
+
+        .games-aovivo { margin-left: 2em;}
+
+        .games-embreve { margin-right: 2em;}
 
 }
 
