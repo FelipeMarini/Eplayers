@@ -191,6 +191,7 @@ img {
         color: white;
         position: absolute;
         top: 0;
+        background-color: blueviolet;
 }
 
 .content-about {
@@ -199,11 +200,13 @@ img {
         display: flex;
         align-items: center;
         justify-content: space-between;
+        background-color: burlywood;
 }
 
 .text-about {
         width: 50%;
         text-align: justify;
+        background-color: coral;
 }
 
 .text-about h2 {
@@ -217,6 +220,7 @@ img {
 
 .content-about img {
         max-width: 31.875em;
+        background-color: azure;
 }
 
 .games-aovivo, .games-embreve {
@@ -428,7 +432,7 @@ img {
 
 
 
-@media screen and (max-width:74.93em) {          /*até 1199px*/
+@media screen and (max-width:74.93em) {          /* 992px até 1199px */          /* recomendável começar com o desktop em 1440px para empresas */
         
         body {font-size:12px;}
         
@@ -448,7 +452,7 @@ img {
 }
 
 
-@media screen and (max-width:61.93em) {          /*até 991px*/
+@media screen and (max-width:61.93em) {          /* 767px até 991px */
         
         body {font-size: 10px;}
 
@@ -498,21 +502,41 @@ img {
         .games-aovivo { margin-left: 2em;}
 
         .games-embreve { margin-right: 2em;}
-
 }
-
         
 
+@media screen and (max-width:47.93em) {                 /* 576px até 767px */ 
+                                               
+        .fas { font-size:35px;
+        }
+        
+        .banner-text { width:55%;
+                       text-shadow: 0 0 35px #000;
+                       font-size: 8px;
+                       padding-left: -3em;
+                     }
+        
+        .banner img {opacity: 0.8;}
+
+        .games ul img  { width:8.5em;
+                         display: flex;
+                         justify-content: space-between;
+                       }
+
+        .games ul a:hover img {
+                transition: 0.8s;
+                transform: scale(1.2);
+        }
+
+        .content-about { flex-wrap: wrap;}
+
+        .content-about img { width: 47%;
+                             height: auto;
+        }
 
 
+}             
 
+@media screen and (max-width:35.93em) {}             /* 421px até 575px */
 
-@media screen and (max-width:47.93px) {                                      /*até 767px*/
-
-
-}
-
-@media screen and (max-width:35.93em) {                                       /*até 575px*/
-
-
-}
+@media screen and (max-width:26.25em) {}             /* 375px até 420px */
