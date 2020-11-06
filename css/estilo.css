@@ -29,14 +29,14 @@ img {
 .header-top {
         width: 100%;
         height: 5em;
-        /* background-color: aliceblue; */
+        /* background-color: rgba(144, 238, 144, 0.226) */
 }
 
 .content {                 /* usado para várias seções do site */
         width: 95%;
         max-width: 75em;
         height: 100%;
-        /*background-color: aqua;*/
+        /* background-color: aqua; */
         margin: auto;
 }
 
@@ -59,6 +59,8 @@ img {
 .menu {
         width: 95%;
         max-width: 50em;
+        background-color: rgba(255, 160, 122, 0.205);
+        display: flex;
 }
 
 .menu ul {
@@ -277,7 +279,7 @@ img {
 .news {
         width: 70%;
         height: 90%;
-        /*background-color: lightgray; */
+        /* background-color: lightgray;  */
 }
 
 .news h2, .next-games h2 {
@@ -322,17 +324,15 @@ img {
         text-decoration: none;
 }
 
-.next-games-bg {
-        width: 90%;
-        /* pai das próximas partidas*/
-        /*90% dos 25% de width definido em .next-games*/
+.next-games-bg {                             /* pai das próximas partidas*/
+        width: 90%;                          /*90% dos 25% de width definido em .next-games*/
         height: auto;
         background: var(--gradient);
         display: flex;
         flex-direction: column;
         justify-content: space-around;
-        padding: 1em 0;
-}
+        padding: 1em 0
+}                      
 
 .next-games-match {
         display: flex;
@@ -369,10 +369,16 @@ img {
                 justify-content: space-around;
 }
 
-.links {color: #fff;}
+.links {color: #fff;
+        line-height: 1.5em;
+}
 
 .links a {text-decoration: none;
           color:#fff;
+}
+
+.links h2 { margin-bottom: 0.8em;
+
 }
 
 .rodape { padding: 1em 0;
@@ -420,13 +426,78 @@ img {
 .logo-face { padding-right: 0.5em;
 }
 
+.pages-rodape { margin-bottom: 2em;}
 
 
 
-@media screen and (max-width:74, 93em) {}
+@media screen and (max-width:74.93em) {          /*até 1199px*/
+        
+        body {font-size:12px;}
+        
+        .header-top img {margin-top: 1em;}
 
-@media screen and (max-width:61, 93em) {}
+        .menu-responsivo { display: none;}
+        
+        .icone-mobile { display: none;}
 
-@media screen and (max-width:47, 93px) {}
+}
 
-@media screen and (max-width:36em) {}
+
+@media screen and (max-width:61.93em) {          /*até 991px*/
+        
+        body {font-size: 10px;}
+
+        .news { max-width: 40em;}
+
+        .icone-mobile { display:block;}
+
+        .fas { color:#fff;
+               font-size: 45px;
+               display: flex; }
+               
+        .header-top img { margin-bottom: 1em;}
+        
+        .menu { display: none;}
+
+        .menu-responsivo { display: none;}
+
+        .menu-responsivo a { display: block;
+                             border: 0.8px solid red;
+                             width: 100%;
+                             padding: 0.4em 0.3em;
+                             text-transform: uppercase;
+                             text-align: center;
+                             color: #fff;
+                             text-decoration: none;
+                             font-size: 1em;
+                           }
+                           
+        .menu-responsivo a:hover { text-decoration: underline;
+                                   border: 1.4px solid darkred;
+                                 }
+
+        .pages-rodape { display: none;}
+
+        .links {line-height: 2.4em;}
+
+        .logo-rodape { margin-right: 4em;
+                       width: 22em;
+        }
+
+}
+
+        
+
+
+
+
+
+@media screen and (max-width:47.93px) {                                      /*até 767px*/
+
+
+}
+
+@media screen and (max-width:35.93em) {                                       /*até 575px*/
+
+
+}

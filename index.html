@@ -7,6 +7,7 @@
     <title>E Players</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
     <link rel="stylesheet" href="css/estilo.css">
+    
 </head>
 
 <body>
@@ -19,23 +20,35 @@
 
             <nav class="menu">
 
-                <ul class="flex-center">
+                <ul>
 
                     <li><a href="#"> Início </a></li>
                     <li><a href="#"> Campeonatos </a></li>
                     <li><a href="#"> Resultados </a></li>
                     <li><a href="#"> Notícias </a></li>
                     <li><a href="#"> Cadastro/Login </a></li>
-
                 </ul>
 
-                <a href="#" id="menu-bars">
-                    <i class="fas fa-bars"></i>
-
-                </a>
             </nav>
+            
+            <a href="#" class="icone-mobile" onclick="botaomenu()"> <i class="fas fa-bars"></i> </a>
+                
+                
         </div>
     </header>
+    
+    <nav id="mylinks" class="menu-responsivo">
+
+        
+        <ul>
+            <li><a href="#"> Início </a></li>
+            <li><a href="#"> Campeonatos </a></li>
+            <li><a href="#"> Resultados </a></li>
+            <li><a href="#"> Notícias </a></li>
+            <li><a href="#"> Cadastro/Login </a></li>
+        </ul>
+    
+    </nav>
 
     <main>
 
@@ -450,7 +463,7 @@
                     
                 </div>
                 
-                <div class="links">
+                <div class="links pages-rodape">
 
                     <h2> Páginas </h2>
 
@@ -495,6 +508,18 @@
         </div>
         
     </footer>
+
+    <script>
+        function botaomenu() { 
+
+          var uldomenu = document.getElementById("mylinks");
+          if (uldomenu.style.display === "block") {
+            uldomenu.style.display = "none";
+          } else {
+            uldomenu.style.display = "block";
+          }
+        }
+    </script>
     
 </body>
 
