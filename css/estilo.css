@@ -191,8 +191,7 @@ img {
         color: white;
         position: absolute;
         top: 0;
-        background-color: blueviolet;
-}
+        }
 
 .content-about {
         width: 95%;
@@ -200,14 +199,12 @@ img {
         display: flex;
         align-items: center;
         justify-content: space-between;
-        background-color: burlywood;
 }
 
 .text-about {
         width: 50%;
         text-align: justify;
-        background-color: coral;
-}
+            }
 
 .text-about h2 {
         margin-bottom: 1em;
@@ -220,8 +217,7 @@ img {
 
 .content-about img {
         max-width: 31.875em;
-        background-color: azure;
-}
+                   }
 
 .games-aovivo, .games-embreve {
         /*background-color:brown;*/
@@ -336,12 +332,11 @@ img {
         padding: 1em 0
 }                      
 
-.next-games-match {
+.next-games-match {                 /* estudar diferença entre space-between e space-around */
         display: flex;
         flex-direction: column;
         color: #fff;
         justify-content: space-around;
-        /* estudar diferença entre space-between e space-around */
         align-items: center;
         /* background-color: lightsalmon; */
         width: 100%;
@@ -349,9 +344,8 @@ img {
         font-weight: 700;
 }
 
-.teams {
+.teams {                              /* div feita para espaçar os logos dos times do vs */
         width: 100%;
-        /* div feita para espaçar os logos dos times do vs */
         display: flex;
         justify-content: space-around;
         padding-top: 0.8em;
@@ -432,7 +426,7 @@ img {
 
 
 
-@media screen and (max-width:74.93em) {          /* 992px até 1199px */          /* recomendável começar com o desktop em 1440px para empresas */
+@media screen and (max-width:74.93em) {   /* 992px até 1199px */      /* recomendável começar com o desktop em 1440px */
         
         body {font-size:12px;}
         
@@ -530,13 +524,51 @@ img {
 
         .content-about { flex-wrap: wrap;}
 
-        .content-about img { width: 47%;
+        .content-about img { width: 49%;
                              height: auto;
         }
 
+        .ajuste-partida2-breve { display: none;}
 
+        .linha { margin-top: 0.8em;
+                 margin-left: 3em;
+        }
+
+        .games-embreve { margin-left:2.3em;}
+
+        .next-games { margin-bottom: 5em;}
+
+        .rodape { display:flex;
+                  flex-wrap: wrap;
+        }
+
+        .pages-rodape1 { width: 40%;}
+
+        .pages-rodape1 h2 { display: none;}
+
+        .pages-rodape1 ul { line-height: 1.8em;
+                            margin-bottom: 9em;
+                            font-size: 1.2em;
+        }
+
+        .logo-rodape { width: 33%;
+                       height: auto;
+                       margin-bottom: 9em;
+        }
+
+        .sociais { width: 33%;
+                   height: auto;
+                   margin-right: 1.5em;
+                   margin-bottom: 8em;
+        }
+
+        .sociais h2 { font-size: 1.2em;}
+
+        .siga-nos h2 {display: none;}
 }             
 
-@media screen and (max-width:35.93em) {}             /* 421px até 575px */
+@media screen and (max-width:35.93em) {          /* 375px até 575px */
+        
+}             
 
-@media screen and (max-width:26.25em) {}             /* 375px até 420px */
+
