@@ -426,7 +426,8 @@ img {
 
 
 
-@media screen and (max-width:74.93em) {   /* 992px até 1199px */      /* recomendável começar com o desktop em 1440px */
+
+@media screen and (max-width:74.93em) {   /* 992px até 1199px */   /* recomendável começar com o desktop em 1440px */
         
         body {font-size:12px;}
         
@@ -441,8 +442,7 @@ img {
         .pages-rodape1 { line-height: 2em;}
 
         .logo-rodape { margin-right:7em;
-                       width: 21em; }
-
+                       width: 21em;}
 }
 
 
@@ -480,7 +480,7 @@ img {
                            }
                            
         .menu-responsivo a:hover { text-decoration: underline;
-                                   border: 1.4px solid darkred;
+                                   border: 4px solid darkred;
                                  }
 
         .pages-rodape { display: none;}
@@ -559,16 +559,85 @@ img {
         .sociais { width: 33%;
                    height: auto;
                    margin-right: 1.5em;
-                   margin-bottom: 8em;
-        }
+                   margin-bottom: 8em;}
 
         .sociais h2 { font-size: 1.2em;}
 
         .siga-nos h2 {display: none;}
+
+        .text-about p  { font-size: 1.159em;}
+
 }             
 
-@media screen and (max-width:35.93em) {          /* 375px até 575px */
+@media screen and (max-width:35.93em) {             /* 375px até 575px */
         
+        
+        .header-top img { width: 50%;}
+
+        .fas { font-size: 30px;
+               margin-left: 3.8em;}
+        
+        .banner-text { font-size: 0.5em;
+                       width:42%;}
+
+        .banner-text a { margin-bottom: 1em;
+                         font-size: 2.2em;
+        }
+
+        .games { height: auto;}
+
+        .games ul img { width: 10.5em; }
+
+        .coluna-games { display: flex;
+                        flex-direction: column;}
+
+        .coluna-games img { padding: 2em 0 ;}
+
+        .about { height:50em;}
+
+        .text-about h2 { text-align: center;}
+
+        .content-about { display: flex;
+                         flex-direction: column;}
+
+        .content-about img { display: none;}
+
+        .angulation { height: 40em;
+                      transform: skewY(-15deg);}
+
+        .aovivo-375px { display: flex;
+                        flex-direction: column;}
+
+        .games-aovivo { margin-right: 2.7em;}
+
+        .linha { height:0;
+                 width: 100%;
+                 margin-right: 3em;}
+
+        .card-375 { display: none;}
+
+        .news { margin-left: 3em;
+                padding: 1em 0;}
+
+        .next-games { width: 70%}
+
+        .next-games h2 { text-align: center;
+                         margin-right: 1em; }
+
+        .logo-rodape { margin-left: 4em;
+                       width: 12em; }
+
+        .sociais h2 { text-align: center;}
+
+        .sociais input[type="email"] { display:none; } 
+
+        .sociais input[type="submit"] { height:2.5em;
+                                        font-weight: bold;}
+
+        .pages-rodape1 { font-size: 0.8em;
+                         margin-left: 1em;}
+
 }             
 
 
+      
